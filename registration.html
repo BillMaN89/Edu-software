@@ -11,29 +11,37 @@
     <script src="script.js"></script> -->
   </head>
   <body>
+    <header>
+      <h1>Εγγραφή Νέου χρήστη</h1>
+    </header>
     <main>
-        <h1>Εγγραφή Νέου χρήστη</h1>
         <form id="registration" action="">
-          <fieldset>
+          <fieldset id="basic-info">
             <legend>Βασικές Πληροφορίες</legend>
-            <div class="first-name">
-             <label id="name-label" for="name">Όνομα</label>
-             <input id="name" type="text" placeholder="Το όνομα σας" required>
-           </div>
-           <div class="last-name">
-            <label id="surname=label" for="surname">Επώνυμο</label>
-            <input id="surname" type="text" placeholder="Το επίθετο σας" required>
-           </div>
-           <div class="email">
-            <label id="email" for="email">Email</label>
-            <input id="email" type="email" placeholder="Το email σας" required>
-           </div>
-           <div class="age">
-            <label id="dob" for="dob">Ηλικία</label>
-            <input id="dob" type="date" placeholder="Ημερομηνία Γέννησης">
-           </div>
+            <div class="form-group">
+              <div class="left-column">
+                <div class="first-name">
+                  <label id="name-label" for="name">Όνομα</label>
+                  <input id="name" type="text" placeholder="Το όνομα σας" required>
+                </div>
+                <div class="last-name">
+                 <label id="surname=label" for="surname">Επώνυμο</label>
+                 <input id="surname" type="text" placeholder="Το επίθετο σας" required>
+                </div>
+              </div>
+              <div class="right-column">
+                <div class="email">
+                  <label id="email" for="email">Email</label>
+                  <input id="email" type="email" placeholder="Το email σας" required>
+                 </div>
+                 <div class="age">
+                  <label id="dob" for="dob">Ημερομηνία Γέννησης</label>
+                  <input id="dob" type="date" placeholder="Ημερομηνία Γέννησης">
+                 </div>
+            </div>
+            </div>
         </fieldset>
-        <fieldset>
+        <fieldset id="account-details">
           <legend>Στοιχεία Λογαριασμού</legend>
           <div class="username">
             <label id="username" for="username">Όνομα χρήστη</label>
@@ -46,7 +54,7 @@
             <input id="confirm-password" type="password" placeholder="Κωδικός Πρόσβασης" required>
           </div>
         </fieldset>
-        <fieldset>
+        <fieldset id="questionnaire">
           <legend>Ερωτηματολόγιο</legend>
           <p>Σε αυτό το σημείο, θα θέλαμε να σας κάνουμε κάποιες σύντομες ερωτήσεις.<br>
             Έτσι, θα μπορέσουμε να διαμορφώσουμε την εμπειρία σας, και να την φέρουμε στα μέτρα σας!
@@ -78,9 +86,18 @@
           <div class="question">
             <label id="q6" for="q6"><strong>Ερώτηση 6:</strong>Δύσκολη επικοινωνίας</label>
           </div>
-          
         </fieldset>
+        <div class="button-container">
+          <button type="reset" id="reset">Καθαρισμός πεδίων</button>
+          <button type="submit" id="submit">Ολοκλήρωση εγγραφής</button>
+        </div>
         </form>
+        <footer>
+          <p>Απαλλακτική Εργασία "Εκπαιδευτικό Λογισμικό" - 2024<br><br>
+            Π12182 - Π16069 <br>
+            Π17088 - Π20092
+          </p>
+        </footer>
     </main>
   </body>
 </html>
