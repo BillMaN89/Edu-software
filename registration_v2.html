@@ -27,22 +27,22 @@
                         <div class="left-column">
                             <div class="first-name">
                                 <label id="name-label" for="name">Όνομα</label>
-                                <input id="name" type="text" placeholder="Το όνομα σας" required>
+                                <input id="name" type="text" name="first_name" placeholder="Το όνομα σας" required>
                             </div>
                             <div class="last-name">
                                 <label id="surname=label" for="surname">Επώνυμο</label>
-                                <input id="surname" type="text" placeholder="Το επίθετο σας" required>
+                                <input id="surname" type="text" name="surname" placeholder="Το επίθετο σας" required>
                             </div>
                         </div>
                         <!--email and dob on the right-->
                         <div class="right-column">
                             <div class="email">
                                 <label id="email" for="email">Email</label>
-                                <input id="email" type="email" placeholder="Το email σας" required>
+                                <input id="email" type="email" name="email" placeholder="Το email σας" required>
                                </div>
                                <div class="age">
-                                <label id="dob" for="dob">Ημερομηνία Γέννησης</label>
-                                <input id="dob" type="date" placeholder="Ημερομηνία Γέννησης">
+                                <label id="dob" for="dob">Χρονολογία Γέννησης</label>
+                                <input id="dob" type="number" name="year_of_birth" placeholder="Ημερομηνία Γέννησης">
                                </div>
                         </div>
                     </div>
@@ -56,9 +56,9 @@
                     </div>
                     <div class="password">
                         <label id="password" for="password">Κωδικός Πρόσβασης</label>
-                        <input id="password" type="password" placeholder="Κωδικός Πρόσβασης" required>
+                        <input id="password" type="password" name="password" placeholder="Κωδικός Πρόσβασης" required>
                         <label class="confirm-password" for="confirm-password">Επιβεβαίωση Κωδικού Πρόσβασης</label>
-                        <input id="confirm-password" type="password" placeholder="Κωδικός Πρόσβασης" required>
+                        <input id="confirm-password" type="password" name="confirmPassword" placeholder="Κωδικός Πρόσβασης" required>
                     </div>
                 </fieldset>
             </div>
