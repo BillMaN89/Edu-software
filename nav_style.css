@@ -10,10 +10,8 @@ body {
     /* Spanish flag background */
     background: linear-gradient(to bottom, 
                                 #c60b1e 33.33%,  /* Red top */
-                                #ffc400 33.33%,  /* Yellow middle */
-                                #ffc400 66.66%,  /* Yellow middle */
+                                #ffc400 33.33% 66.66%,  /* Yellow middle */
                                 #c60b1e 66.66%); /* Red bottom */
-    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
