@@ -38,13 +38,13 @@ body {
     top: 0;
     left: 0;
     /* Change the sidebar's length */
-    height: fit-content;
+    height: 100%;
     width: 160px;
     display:flex;
     flex-direction: column;
     padding: 20px 15px;
-    background-color: #00000072;  
-    border: 5px double #000000;
+    background-color: #0a0a0a;  
+    border: 5px double #0a0a0a;
     overflow-x: hidden;
     transition: all 0.4s ease;
   }
